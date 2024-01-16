@@ -1,0 +1,176 @@
+nav {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 28px 100px 28px;
+}
+
+.logoIcon {
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+}
+
+.cartBtn:hover path {
+    fill: #393;
+}
+
+.navbar {
+    gap: 15px;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    height: 100px;
+    z-index: 1;
+    padding: 5px 25px;
+    display: none;
+    background-color: #393;
+    border-radius: 16px;
+}
+
+.navbar li {
+    color: white;
+    list-style: none;
+    font-size: 20px;
+}
+
+.navbar_mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar_links li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    color: black;
+    cursor: pointer;
+    list-style: none;
+}
+
+.navbar_links li:hover {
+    color: #393;
+    text-decoration: underline;
+
+}
+
+.catalogBtn {
+    padding: 15px 30px;
+    border: 2px solid #393;
+    background: #393;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logoDiv {
+    gap: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartBtn {
+    cursor: pointer;
+    position: relative;
+}
+
+.cartProductCount {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    background-color: #393;
+    position: absolute;
+    right: -15px;
+    top: -5px;
+    width: 25px;
+    height: 25px;
+}
+
+.navbar_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 550px;
+    width: 100%;
+
+}
+
+.navbar.open {
+    display: block;
+}
+
+.navbar_togle {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar_togle span {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 9px 0;
+    width: 30px;
+    height: 4px;
+    background-color: #393;
+    position: relative;
+}
+
+.navbar_links li.activeLink {
+    color: #393;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 740px) {
+    .logoDiv {
+        gap: 30px;
+    }
+
+    .navContainer {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .navbar_links {
+        display: none;
+    }
+
+    .navbar_togle,
+    .navbar_mobile {
+        display: block;
+    }
+
+    .navbar_right {
+        gap: 20px;
+    }
+
+    .logoDiv {
+        gap: 10px;
+    }
+
+    .navContainer {
+        gap: 30px;
+    }
+}

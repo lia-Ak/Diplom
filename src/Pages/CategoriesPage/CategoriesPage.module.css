@@ -1,0 +1,25 @@
+.categoriesPage{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: 50px;
+}
+.categoriesPageContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 81px;
+    margin-left: 33px;
+}
+.categoriesPageTitle{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+@media screen and (max-width: 390px){
+    .categoriesPageTitle{
+        font-size: 26px;
+    }
+    .categoriesPageContainer{
+        gap: 40px;
+    }
+}

@@ -1,0 +1,104 @@
+.footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.infoArea{
+    display: flex;
+    margin: 0 46px;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contact h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.contact h3{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 130%;
+}
+.contact a:hover{
+    color: #393;
+}
+.socNetIcons{
+    display: flex;
+    gap: 34px;
+}
+.insta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.insta:hover{
+    color: #393;
+}
+.insta:hover path{
+    fill: #393;
+}
+.whatsapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.whatsapp:hover{
+    color: #393;
+}
+.whatsapp:hover path{
+    fill: #393;
+  }
+label{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 130%;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.address h3{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.address a{
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    text-decoration: underline;
+    padding-top: 5px;
+    max-width: 564px;
+}
+.address a:hover{
+    color: #393;
+}
+.address h5{
+    font-size: 24px;
+    font-weight: 600;
+}
+@media screen and (max-width: 390px){
+    .infoArea{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact h2{
+        font-size: 28px;
+    }
+    .contact h3{
+        font-size: 24px;
+    }
+    .address h3{
+        font-size: 28px;
+    }
+    .address a{
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,18 @@
+.homePageSale{
+    max-width: 1440px;
+    margin: 30px 49px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.homePageSaleH2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1.2px;
+}
+@media screen and (max-width: 390px){
+    .homePageSaleH2{
+        font-size: 28px;
+    }
+}

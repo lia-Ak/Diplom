@@ -1,0 +1,101 @@
+.discountBanner{
+    max-width: 1440px;
+    background: linear-gradient(263deg, #393 -0.43%, #006300 104.36%);
+    display: flex;
+    margin-top: 89px;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.dwarfImg{
+    width: 422px;
+    height: 422px;
+    margin: 27px 0;
+}
+.discountBannerInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.discountBannerH2{
+    font-size: 90px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2.7px;
+    line-height: 120%;
+}
+.discountBannerH3{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1.5px;
+    margin-bottom: 46px;
+}
+.discountBannerForm{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.discountBannerInput{
+    height: 76px;
+    padding-left: 51px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.54px;
+    background-color: #fff;
+    border: none;
+    border-radius: 26px;
+}
+.discountBannerBtn{
+    height: 76px;
+    text-align: center;
+    background: linear-gradient(263deg, #393 -0.43%, #006300 104.36%);
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 26px;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.9px;
+    cursor: pointer;
+}
+@media screen and (max-width: 740px){
+    .discountBannerH2{
+        font-size: 70px;
+    }
+    .discountBannerForm{
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 390px){
+    .discountBanner{
+        flex-direction: column;
+    }
+    .dwarfImg{
+        width: 300px;
+        height: 300px;
+    }
+    .discountBannerInfo{
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    .discountBannerH2{
+    font-size: 28px;
+    }
+    .discountBannerH3{
+        font-size: 20px;
+    }
+    .discountBannerForm{
+        gap: 15px;
+    }
+    .discountBannerInput{
+        height: 50px;
+    }
+    .discountBannerBtn{
+        height: 50px;
+        font-size: 20px;
+    }
+}   

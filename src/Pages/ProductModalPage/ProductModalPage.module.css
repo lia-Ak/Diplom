@@ -1,0 +1,129 @@
+.modalPage{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 31px;
+    display: flex;
+    flex-direction: column;
+}
+.modalPageTitle{
+    font-size: 40px;
+    font-family: 700;
+    letter-spacing: 1.2px;
+    margin-bottom: 81px;
+}
+.modalPageFiltration{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 34px;
+}
+.modalPageFiltrationPrice{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.modalPageFiltrationPrice input{
+    width: 103px;
+}
+label{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+input{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    color: #ACACAC;
+    border-radius: 7px;
+    border: 1px solid #000;
+}
+select{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    color: #ACACAC;
+    border-radius: 7px;
+    border: 1px solid #000;
+}
+option{
+    color: #000;
+}
+.modalPageFiltrationCheckbox{
+    display: flex;
+    gap: 39px;
+    align-items: center;
+}
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.checkBox{
+    opacity: 0;
+}
+.customCheckbox {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.customCheckbox::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #393;;
+    border-radius: 7px;
+    display: block;
+    margin: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.checkboxLabel input:checked + .customCheckbox::after {
+    opacity: 1;
+}
+  
+.modalPageFiltrationSorted{
+    display: flex;
+    gap: 42px;
+    align-items: center;
+}
+.modalPageFiltrationSorted input{
+    width: 219px;
+}
+@media screen and (max-width: 740px){
+    .modalPageFiltration{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 390px){
+    .modalPageTitle{
+        font-size: 26px;
+    }
+    .modalPageFiltration{
+        gap: 15px;
+    }
+    label{
+        font-size: 18px;
+    }
+    .modalPageFiltrationSorted{
+        gap: 20px;
+    }
+    select{
+        width: 200px;
+    }
+}

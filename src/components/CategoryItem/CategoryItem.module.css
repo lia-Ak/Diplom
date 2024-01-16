@@ -1,0 +1,19 @@
+.categoryItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.categoryItemImg{
+    width: 318px;
+    height: 350px;
+    cursor: pointer;
+}
+.categoryItemTitle{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.54px;
+}
+.categoryItem:hover{
+    color: #393;
+}
